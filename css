@@ -1,0 +1,715 @@
+
+ /* Home page */
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    scroll-behavior: smooth;
+  }
+   /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 30px;
+      background-color: white;
+      color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    
+    .logo-container {
+      flex-basis: 20%;
+    }
+    
+    .logo-container img {
+      max-height: 50px;
+    }
+    
+  
+    /*menu*/
+    .menu {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-grow: 1;
+    }
+    
+    .menu a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 5px 15px;
+      transition: background-color 0.3s;
+    }
+    
+    .menu a:hover {
+      background-color: red;
+      border-radius: 20px;
+    }
+  
+    
+    /* main page*/
+   /* Discover Section */
+  .discover-section {
+    position: relative; /* Set position relative for the section */
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white;
+  }
+  
+  .discover-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Keep the image as a background */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the image stays behind the button */
+  }
+  
+  .discover-text {
+    position: absolute; /* Position the button in front of the image */
+    top: 92%; /* Center the button vertically */
+    left: 50%; /* Center the button horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    text-align: center;
+    z-index: 2; /* Ensure the button stays on top of the image */
+  }
+  
+  .shop-now-btn {
+    padding: 15px 25px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: rgb(241, 12, 12);
+  }
+  
+  
+    /*men section*/
+    .men-section {
+      text-align: center;
+      padding: 20px 60px;
+      margin-top: 50px; 
+      font-size: 45px;
+  }
+  
+  .men-section h2 {
+      margin-bottom: 30px;
+      font-size: 45px;
+      color: black;
+      font-weight:normal;
+  }
+  
+  .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .box {
+      width: 450px;
+      height: 400px;
+      border: 0px solid #ccc;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      flex-direction: column;
+      box-shadow: 0 6px 8px rgba(17, 9, 9, 0.1);
+  }
+  
+  .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  /*box text*/
+  .box p {
+      margin-top: 25px;
+      font-size: 30px;
+      font-weight: lighter;
+      text-align: center;
+      color: black;
+      margin-bottom: 30px;
+  }
+  
+    /*women section*/
+    .women-section {
+      text-align: center;
+      padding: 20px 60px;
+      margin-top: 60px; 
+      font-size: 45px;
+  }
+  
+  .women-section h2 {
+      margin-bottom: 20px;
+      font-size: 45px;
+      color: black;
+      font-weight:normal;
+  }
+  
+  .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .box {
+      width: 500px;
+      height: 600px;
+      border: 0px solid #ccc;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      box-shadow: 0 6px 8px rgba(17, 9, 9, 0.1);
+  }
+  
+  .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+   /*classic section*/
+   .classic-section {
+      text-align: center;
+      padding: 20px 60px;
+      margin-top: 60px; 
+      font-size: 45px;
+      margin-bottom: 100px;
+  }
+  
+  .classic-section h2 {
+      margin-bottom: 20px;
+      font-size: 45px;
+      color: black;
+      font-weight:normal;
+  }
+  
+  .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .box {
+      width: 500px;
+      height: 600px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      box-shadow: 0 6px 8px rgba(17, 9, 9, 0.1);
+  }
+  
+  .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  /*ovverieww*/
+  .overview-section {
+    text-align: center;
+    padding: 20px 60px;
+    margin-top: 60px; 
+    font-size: 45px;
+    margin-bottom: 100px;
+  }
+  
+  .box1-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Box styles */
+  .box1 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: flex-start; /* Align children to the top */
+    border-radius: 20px;
+    box-shadow: 0 6px 8px rgba(17, 9, 9, 0.1);
+    padding: 20px; /* Add some padding for spacing */
+    text-align: center;
+    background-color: silver;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  /* Heading styles for centering */
+  .box1 h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 0; /* Remove default margin around h1 */
+    margin-bottom: 10px; /* Add some space between heading and paragraph */
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Paragraph styles */
+  .box1 p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .box1 a{
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+   /* product detail page */
+   /* Product Detail Section */
+.product-detail {
+    margin-top: 120px; /* Account for header */
+    padding: 20px;
+    text-align: center;
+}
+
+.product-detail h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Box */
+.description-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.description-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.description-box p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.action-buttons a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.back-button {
+    background-color: black;
+}
+
+.back-button:hover {
+    background-color: red;
+}
+
+.buy-button {
+    background-color: green;
+}
+
+.buy-button:hover {
+    background-color: darkgreen;
+}
+
+.cart-button {
+    background-color: blue;
+}
+
+.cart-button:hover {
+    background-color: darkblue;
+}
+
+/*review*/
+.review-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  
+  .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .star.selected {
+    color: gold;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: rgb(240, 234, 234);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:red ;
+  }
+  
+  .comments-section {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .comment-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .comment-card h3 {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  .comment-card p {
+    margin: 5px 0;
+  }
+  
+
+
+
+  /*blogg page*/
+  /* Blog Section */
+.blog-section {
+    padding: 120px 60px 60px; /* Adjust for fixed header */
+    max-width: 1000px;
+    margin: auto;
+    color: black;
+  }
+  
+  .blog-section h1 {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+  }
+  
+  .blog-section h2 {
+    font-size: 40px;
+    margin-top: 40px;
+    color: black;
+    text-align: center;
+    font-weight: lighter;
+  }
+  
+  .blog-section p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  
+  .blog-image {
+      width: 80%; /* Adjust width as needed */
+      max-width: 600px; /* Set a max width if desired */
+      height: auto; /* Maintain aspect ratio */
+      margin: 20px auto; /* Center the image horizontally */
+      display: block; /* Ensure the image behaves as a block-level element */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    /*aboutusss*/
+    /* About Section */
+.about-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .about-section h1 {
+    font-weight:lighter;
+    font-size: 80px;
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
+
+  .about-section p{
+    margin-bottom: 40px;
+    font-size: 24px;
+    padding: 0px 60px;
+    font-weight:lighter;
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+  }
+  
+  .team-member {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 0px solid gray;
+    border-radius: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  
+  .team-member h2 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight:norma;
+  }
+  
+  .cv-link {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cv-link:hover {
+    background-color: red;
+  }
+
+
+  /*portfolio*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #000000;
+    color: #FFFFFF;
+  }
+  
+  .container {
+    padding: 10px 10%;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: lighter;
+    color: #ff004f; /* Make it stand out */
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+  }
+  
+  .header-image img {
+    height: 300px; /* Adjust size as needed */
+    width: 300px;  /* Ensure width and height are equal */
+    border-radius: 50%; /* Make the image circular */
+    border: 5px solid #ff004f; /* Optional border for styling */
+    object-fit: cover; /* Ensures proper image scaling */
+  }
+  .cv-link {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cv-link:hover {
+    background-color: red;
+  }
+
+
+
+/*footer*/
+footer {
+    background-color: black; /* Entire footer background is black */
+    color: white; /*text in the footer becomes white */
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
+  }
+  
+  /* Footer Sections: About, Contact, Policies */
+  .footer-sections {
+    display: flex;
+    justify-content: space-between; /* Align sections across the width */
+    text-align: left;
+    margin-bottom: 20px; /* Space between sections and the Swiss Made part */
+  }
+  
+  .footer-column {
+    flex: 1; /* Each section takes equal width */
+    padding: 0 10px; /* Add some horizontal padding */
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+  }
+  
+  .footer-column a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Swiss Made Section */
+  .swiss-made-section {
+    text-align: center;
+    margin-top: 40px; /* Space above the Swiss Made section */
+  }
+  
+  .swiss-made {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; /* Space between logo and HR */
+  }
+  
+  .swiss-flag {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .hr {
+    border: 1px solid white; /* White line for contrast */
+    margin: 20px auto; /* Add space above and below HR */
+    width: 90%; /* Center the HR and limit its width */
+    margin-bottom: 20px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
